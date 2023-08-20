@@ -1,0 +1,105 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+body {
+    background-color: hsl(233, 47%, 7%);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+/* Text sector */
+.t1 {
+    color: hsl(0, 0%, 100%);
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 700;
+}
+.t2 {
+    line-height: 20px;
+    margin-top: 25px;
+    font-size: 13px;
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsla(0, 0%, 100%, 0.588);
+}
+t1-1 {color: hsl(277, 64%, 61%);}
+.lb-c {
+    margin-top: 100px;
+    width: 290px;
+    display: flex;
+    justify-content: space-between;
+}
+.element {
+    letter-spacing: 1px;
+    font-size: large;
+    color: white;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 700;
+}
+.row2 {
+    letter-spacing: 1px;
+    margin-top: 4px;
+    font-size: 10px;
+    color: hsla(0, 0%, 100%, 0.588);
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+}
+/* text sector  */
+
+.container {
+    margin: 100px;
+    display: flex;
+    grid-template-areas: "left-box right-box";
+}
+.left-box {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color: hsl(244, 38%, 16%);
+    height: 450px;
+    width: 520px;
+}
+.lc {
+    margin: 80px;
+}
+img {
+    mix-blend-mode: multiply;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    display: flex;
+    max-width: 100%;
+    height: 450px;
+    width: 520px;
+}
+.right-box {
+    background-color: hsl(277, 64%, 61%);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+@media only screen and (max-width:705px){
+    * {
+        text-align: center;
+    }
+    .container {
+        align-items: center;
+        margin-top: 0px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .left-box {
+        height: auto;
+        width: auto;
+    }
+    .right-box {
+        height: auto;
+        width: auto;
+    }
+    .lb-c {
+        display: flex;
+        flex-direction: column;
+    }
+}
